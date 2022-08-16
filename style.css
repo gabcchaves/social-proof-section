@@ -42,11 +42,61 @@ button {
 body {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
-	background-image:
-		url("images/bg-pattern-top-desktop.svg"),
-		url("images/bg-pattern-bottom-desktop.svg");
-	background-repeat: no-repeat, no-repeat;
-	background-position: top left, bottom right;
+	align-items: center;
 }
+h1 { color: var(--very-dark-magenta); }
+p { color: var(--dark-grayish-magenta); }
+.rating-card {
+	background-color: var(--light-grayish-magenta);
+	border-radius: 10px;
+	background-image:
+		url("images/icon-star.svg"),
+		url("images/icon-star.svg"),
+		url("images/icon-star.svg"),
+		url("images/icon-star.svg"),
+		url("images/icon-star.svg");
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+}
+.comment {
+	border-radius: 10px;
+	background-color: var(--very-dark-magenta);
+}
+.comment-author-image {
+	border-radius: 50%;
+	width: 15%;
+}
+.comment-author-name :first-child { color: var(--white); }
+.comment-author-name :last-child { color: var(--soft-pink); }
+.comment-text { color: var(--white); }
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	main {
+		width: 90%;
+		height: 80%;
+	}
+
+	h1 {
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	p {
+		text-align: center;
+		margin: 10% 0;
+		font-size: 0.8em;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
